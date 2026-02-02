@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 7D Interactive Visualisations</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="d7e5a261-b5a8-4b74-a0d3-60b734df0182" data-root-id="p1114" style="display: contents;"></div>
+  
+    <script type="application/json" id="f7a0413d-8ba1-476a-b053-a016013172f2">
+      {"30b2904d-05ce-435b-9edc-dde986edb042":{"version":"3.6.0","title":"Bokeh Application","roots":[{"type":"object","name":"Figure","id":"p1114","attributes":{"height":420,"x_range":{"type":"object","name":"FactorRange","id":"p1124","attributes":{"factors":["Diabetic","Non-Diabetic"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p1116"},"x_scale":{"type":"object","name":"CategoricalScale","id":"p1125"},"y_scale":{"type":"object","name":"LinearScale","id":"p1126"},"title":{"type":"object","name":"Title","id":"p1117","attributes":{"text":"Average Total Cholesterol: Diabetic vs Non-Diabetic"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1156","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1111","attributes":{"selected":{"type":"object","name":"Selection","id":"p1112","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1113"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAA="},"shape":[2],"dtype":"int32","order":"little"}],["diabetes_status",{"type":"ndarray","array":["Diabetic","Non-Diabetic"],"shape":[2],"dtype":"object","order":"little"}],["AvgTotalChol",{"type":"ndarray","array":{"type":"bytes","data":"O7ETO7HYZECXyZFBfjFnQA=="},"shape":[2],"dtype":"float64","order":"little"}],["Count",{"type":"ndarray","array":{"type":"bytes","data":"oAEAAHgLAAA="},"shape":[2],"dtype":"int32","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p1157","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1158"}}},"glyph":{"type":"object","name":"VBar","id":"p1153","attributes":{"x":{"type":"field","field":"diabetes_status"},"width":{"type":"value","value":0.6},"top":{"type":"field","field":"AvgTotalChol"},"line_color":{"type":"value","value":null},"fill_color":{"type":"field","field":"diabetes_status","transform":{"type":"object","name":"CategoricalColorMapper","id":"p1149","attributes":{"palette":["#4C78A8","#F58518"],"factors":["Diabetic","Non-Diabetic"]}}}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p1154","attributes":{"x":{"type":"field","field":"diabetes_status"},"width":{"type":"value","value":0.6},"top":{"type":"field","field":"AvgTotalChol"},"line_color":{"type":"value","value":null},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"diabetes_status","transform":{"id":"p1149"}},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p1155","attributes":{"x":{"type":"field","field":"diabetes_status"},"width":{"type":"value","value":0.6},"top":{"type":"field","field":"AvgTotalChol"},"line_color":{"type":"value","value":null},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"diabetes_status","transform":{"id":"p1149"}},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1123","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p1137"},{"type":"object","name":"WheelZoomTool","id":"p1138","attributes":{"renderers":"auto"}},{"type":"object","name":"BoxZoomTool","id":"p1139","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p1140","attributes":{"syncable":false,"line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5,"level":"overlay","visible":false,"left":{"type":"number","value":"nan"},"right":{"type":"number","value":"nan"},"top":{"type":"number","value":"nan"},"bottom":{"type":"number","value":"nan"},"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","handles":{"type":"object","name":"BoxInteractionHandles","id":"p1146","attributes":{"all":{"type":"object","name":"AreaVisuals","id":"p1145","attributes":{"fill_color":"white","hover_fill_color":"lightgray"}}}}}}}},{"type":"object","name":"ResetTool","id":"p1147"},{"type":"object","name":"SaveTool","id":"p1148"},{"type":"object","name":"HoverTool","id":"p1159","attributes":{"renderers":[{"id":"p1156"}],"tooltips":[["Group","@diabetes_status"],["Avg Total Chol","@AvgTotalChol{0.00}"],["Participants","@Count{0}"]]}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p1132","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1133","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1134"},"axis_label":"Average Total Cholesterol (LBXTC)","major_label_policy":{"type":"object","name":"AllLabels","id":"p1135"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p1127","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p1128"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p1129"},"axis_label":"Diabetes Status","major_label_policy":{"type":"object","name":"AllLabels","id":"p1130"}}}],"center":[{"type":"object","name":"Grid","id":"p1131","attributes":{"axis":{"id":"p1127"},"grid_line_color":null}},{"type":"object","name":"Grid","id":"p1136","attributes":{"dimension":1,"axis":{"id":"p1132"}}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('f7a0413d-8ba1-476a-b053-a016013172f2').textContent;
+              const render_items = [{"docid":"30b2904d-05ce-435b-9edc-dde986edb042","roots":{"p1114":"d7e5a261-b5a8-4b74-a0d3-60b734df0182"},"root_ids":["p1114"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
